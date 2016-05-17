@@ -3,21 +3,15 @@ using System;
 
 public class ScriptingException : Exception
 {
-    public string m_message { get; private set; }
+    public string m_Message { get; set; }
 
     public ScriptingException() : base()
     {
-        m_message = "";
+        m_Message = "";
     }
 
-    public ScriptingException(string message) : base()
+    public ScriptingException(string message)
     {
-        m_message = message;
-    }
-
-    public ScriptingException setMessage(string message)
-    {
-        m_message = message;
-        return this;
+        m_Message = message;
     }
 };
